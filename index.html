@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #212121;
+            margin: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 24px;
+            padding-bottom: 25px;
+            margin-left: 215px;
+            margin-right: 215px;
+        }
+
+        .logo {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.19;
+            letter-spacing: 0.03em;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .logo-color {
+            color: #2196F3;
+        }
+
+        .header-nav-list {
+            display: flex;
+            list-style: none;
+            gap: 50px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-nav-link {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            color: #212121;
+            text-decoration: none;
+        }
+
+        .header-contacts-list {
+            display: flex;
+            list-style: none;
+            gap: 50px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-contacts-link {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            color: #757575;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-color: #2F303A;
+            text-align: center;
+            padding-top: 200px;
+            padding-bottom: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-title {
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin: 0 0 30px 0;
+        }
+
+        .hero-btn {
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.88;
+            letter-spacing: 0.06em;
+            color: #FFFFFF;
+            background-color: #2196F3;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 32px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+
+        .features {
+            padding: 94px 0;
+            margin: 0 215px;
+        }
+
+        .features-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .features-item {
+            width: 270px;
+        }
+
+        .features-title {
+            font-size: 14px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+        }
+
+        .features-text {
+            font-size: 14px;
+            color: #757575;
+            margin: 0;
+        }
+
+        .work {
+            padding-bottom: 94px;
+            margin: 0 215px;
+        }
+
+        .work-title {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            margin: 0 0 50px 0;
+        }
+
+        .work-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .team {
+            background-color: #F5F4FA;
+            padding: 94px 0;
+        }
+
+        .team-title {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            margin: 0 0 50px 0;
+        }
+
+        .team-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .team-item {
+            background-color: #FFFFFF;
+            border-radius: 0px 0px 4px 4px;
+        }
+
+        .team-card {
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .team-name {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0 0 10px 0;
+        }
+
+        .team-position {
+            font-size: 16px;
+            color: #757575;
+            margin: 0;
+        }
+
+        .footer {
+            background-color: #2F303A;
+            padding: 60px 0;
+        }
+
+        .footer-container {
+            margin: 0 215px;
+        }
+
+        .logo-white {
+            color: #FFFFFF;
+        }
+
+        .footer-address {
+            font-style: normal;
+            margin-top: 20px;
+        }
+
+        .footer-location {
+            color: #FFFFFF;
+            font-size: 14px;
+            margin: 0 0 9px 0;
+        }
+
+        .footer-contacts {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-link {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
+
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li><a href="./index.html" class="header-nav-link">Студія</a></li>
+                <li><a href="./portfolio.html" class="header-nav-link">Портфоліо</a></li>
+                <li><a href="" class="header-nav-link">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <ul class="header-contacts-list">
+            <li><a href="mailto:info@devstudio.com" class="header-contacts-link">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111" class="header-contacts-link">+38 096 111 11 11</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="hero-title">Ефективні рішення для<br>вашого бізнесу</h1>
+            <button type="button" class="hero-btn">Замовити послугу</button>
+        </section>
+
+        <section class="features">
+            <ul class="features-list">
+                <li class="features-item">
+                    <h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                    <p class="features-text">Ідейні міркування, а також початок повсякденної роботи з формування
+                        позиції.</p>
+                </li>
+                <li class="features-item">
+                    <h3 class="features-title">ПУНКТУАЛЬНІСТЬ</h3>
+                    <p class="features-text">Завдання організації, особливо ж консультація з широким активом сприяє.</p>
+                </li>
+                <li class="features-item">
+                    <h3 class="features-title">ПЛАНУВАННЯ</h3>
+                    <p class="features-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                </li>
+                <li class="features-item">
+                    <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                    <p class="features-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="work">
+            <h2 class="work-title">Чим ми займаємося</h2>
+
+            <ul class="work-list">
+                <li class="work-item">
+                    <img src="./images/img1.jpg" alt="Десктопні додатки" width="370" height="294">
+                </li>
+                <li class="work-item">
+                    <img src="./images/img2.png" alt="Мобільні додатки" width="370" height="294">
+                </li>
+                <li class="work-item">
+                    <img src="./images/img3.png" alt="Дизайнерські рішення" width="370" height="294">
+                </li>
+            </ul>
+        </section>
+
+        <section class="team">
+            <h2 class="team-title">Наша команда</h2>
+
+            <ul class="team-list">
+                <li class="team-item">
+                    <img src="./images/img4.jpg" alt="Ігор Дем'яненко" width="270" height="260">
+                    <div class="team-card">
+                        <h3 class="team-name">Ігор Дем'яненко</h3>
+                        <p class="team-position">Product Designer</p>
+                    </div>
+                </li>
+                <li class="team-item">
+                    <img src="./images/img5.jpg" alt="Ольга Єрмакова" width="270" height="260">
+                    <div class="team-card">
+                        <h3 class="team-name">Ольга Єрмакова</h3>
+                        <p class="team-position">Frontend Developer</p>
+                    </div>
+                </li>
+                <li class="team-item">
+                    <img src="./images/img6.jpg" alt="Микола Тарасов" width="270" height="260">
+                    <div class="team-card">
+                        <h3 class="team-name">Микола Тарасов</h3>
+                        <p class="team-position">Marketing</p>
+                    </div>
+                </li>
+                <li class="team-item">
+                    <img src="./images/img7.jpg" alt="Михайло Єрмаков" width="270" height="260">
+                    <div class="team-card">
+                        <h3 class="team-name">Михайло Єрмаков</h3>
+                        <p class="team-position">UI Designer</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="./index.html" class="logo"><span class="logo-color">Web</span><span
+                    class="logo-white">Studio</span></a>
+
+            <address class="footer-address">
+                <p class="footer-location">м. Київ, пр-т Лесі Українки, 26</p>
+                <ul class="footer-contacts">
+                    <li><a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a></li>
+                    <li><a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>
